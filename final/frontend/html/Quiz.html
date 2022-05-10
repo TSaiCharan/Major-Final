@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Participants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" integrity="sha512-6S2HWzVFxruDlZxI3sXOZZ4/eJ8AcxkQH1+JjSe/ONCEqR9L4Ysq5JdT5ipqtzU7WHalNwzwBv+iE51gNHJNqQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/contest.css">
+    <link rel="stylesheet" type="text/css" href="../css/quiz.css">
+
+
+</head>
+
+
+<body data-spy="scroll" data-target="#myScrollspy" style="background-color: rgb(255, 253, 251);">
+
+    <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="205" style="padding:8px">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                  </button> 
+                <a class="navbar-brand" href="#">
+                   <span> <img id="logo" src="/img/CMRlogo.PNG"> </span>Get certified
+                </a> 
+              </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" >
+                    <li><a href="#profile" id="userID"></a></li>
+                    <li><a href="#logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <!--QUIZ -->
+        <div class="row">
+          <!-- Question 1 -->
+          <div class="col"><br><br>
+            <span>Question 1: Number of primitive data types in Java are </span> <br><br>
+            <div class="row pt-1">
+              <div class="col-md-3">
+                  <div class="options"> <label class="option">6 <input type="radio" value="a" id="que1" name="que1"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">7 <input type="radio" value="b" id="que1" name="que1"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">8 <input type="radio" value="c" id="que1" name="que1"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                <div class="options"> <label class="option">9 <input type="radio" value="d" id="que1" name="que1"> <span class="checkmark"></span> </label> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row"> 
+          <!-- Question 2 -->
+          <div class="col"><br><br>
+            <span> Question 2: What is the size of float and double in java?</span> <br><br>
+            <div class="row pt-1">
+              <div class="col-md-3">
+                  <div class="options"> <label class="option">32 & 64 <input type="radio" value="a" id="que2" name="que2"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">32 & 32 <input type="radio" value="b" id="que2" name="que2"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">64 & 64 <input type="radio" value="c" id="que2" name="que2"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">64 & 32 <input type="radio" value="d" id="que2" name="que2"> <span class="checkmark"></span> </label> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row"> 
+          <!-- Question 3 -->
+          <div class="col"><br><br>
+            <span> Question 3: Automatic type conversion is possible in which of the possible cases?</span> <br><br>
+            <div class="row pt-1">
+              <div class="col-md-3">
+                  <div class="options"> <label class="option">byte to int <input type="radio" value="a" id="que3" name="que3"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">int to long <input type="radio" value="b" id="que3" name="que3"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">long to int <input type="radio" value="c" id="que3" name="que3"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">short to int <input type="radio" value="d" id="que3" name="que3"> <span class="checkmark"></span> </label> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row"> 
+          <!-- Question 4 -->
+          <div class="col"><br><br>
+            <span> Question 4: Select the valid statement.</span> <br><br>
+            <div class="row pt-1">
+              <div class="col-md-3">
+                  <div class="options"> <label class="option">char[] ch = new char(5) <input type="radio" value="a" id="que4" name="que4"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">char[] ch = new char[5] <input type="radio" value="b" id="que4" name="que4"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">char[] ch = new char() <input type="radio" value="c" id="que4" name="que4"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">char[] ch = new char[] <input type="radio" value="d" id="que4" name="que4"> <span class="checkmark"></span> </label> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row"> 
+          <!-- Question 5 -->
+          <div class="col"><br><br>
+            <span> Question 5: When an array is passed to a method, what does the method receive?</span> <br><br>
+            <div class="row pt-1">
+              <div class="col-md-3">
+                  <div class="options"> <label class="option">The reference of the array <input type="radio" value="a" id="que5" name="que5"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">A copy of the array <input type="radio" value="b" id="que5" name="que5"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">Length of the array <input type="radio" value="c" id="que5" name="que5"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">Copy of first element <input type="radio" value="d" id="que5" name="que5"> <span class="checkmark"></span> </label> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row"> 
+          <!-- Question 6 -->
+          <div class="col"><br><br>
+            <span> Question 6: Select the valid statement to declare and initialize an array.</span> <br><br>
+            <div class="row pt-1">
+              <div class="col-md-3">
+                  <div class="options"> <label class="option">int[] A = {} <input type="radio" value="a" id="que6" name="que6"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">int[] A ={1,2,3} <input type="radio" value="b" id="que6" name="que6"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">int[] A =(1,2,3)<input type="radio" value="c" id="que6" name="que6"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">int[][] A ={1,2,3}<input type="radio" value="d" id="que6" name="que6"> <span class="checkmark"></span> </label> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row"> 
+          <!-- Question 7 -->
+          <div class="col"><br><br>
+            <span> Question 7: Arrays in java are</span> <br><br>
+            <div class="row pt-1">
+              <div class="col-md-3">
+                  <div class="options"> <label class="option">Object references <input type="radio" value="a" id="que7" name="que7"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">objects <input type="radio" value="b" id="que7" name="que7"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">Primitive data types<input type="radio" value="c" id="que7" name="que7"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">None<input type="radio" value="d" id="que7" name="que7"> <span class="checkmark"></span> </label> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row"> 
+          <!-- Question 8 -->
+          <div class="col"><br><br>
+            <span> Question 8: Identify the corrected definition of a package. </span> <br><br>
+            <div class="row pt-1">
+              <div class="col-md-3">
+                  <div class="options"> <label class="option">A package is a collection of editing tools <input type="radio" value="a" id="que8" name="que8"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">A package is a collection of classes <input type="radio" value="b" id="que8" name="que8"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">A package is a collection of collection of classes and interfaces<input type="radio" value="c" id="que8" name="que8"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">A package is a collection of interfaces <input type="radio" value="d" id="que8" name="que8"> <span class="checkmark"></span> </label> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row"> 
+          <!-- Question 9 -->
+          <div class="col"><br><br>
+            <span> Question 9:When is the object created with new keyword? </span> <br><br>
+            <div class="row pt-1">
+              <div class="col-md-3">
+                  <div class="options"> <label class="option">At run time <input type="radio" value="a" id="que9" name="que9"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">At compile time <input type="radio" value="b" id="que9" name="que9"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">Depends on the code <input type="radio" value="c" id="que9" name="que9"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">None<input type="radio" value="d" id="que9" name="que9"> <span class="checkmark"></span> </label> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row"> 
+          <!-- Question 10 -->
+          <div class="col"><br><br>
+            <span> Question 10: Identify the correct restriction on static methods.
+              1.They must access only static data
+              2.They can only call other static methods.
+              3.They cannot refer to this or super.</span> <br><br>
+            <div class="row pt-1">
+              <div class="col-md-3">
+                  <div class="options"> <label class="option">I and II <input type="radio" value="a" id="que10" name="que10"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">II and III <input type="radio" value="b" id="que10" name="que10"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">only III <input type="radio" value="c" id="que10" name="que10"> <span class="checkmark"></span> </label> </div>
+              </div>
+              <div class="col-md-3 mt-md-0 mt-3">
+                  <div class="options"> <label class="option">I ,II and III<input type="radio" value="d" id="que10" name="que10"> <span class="checkmark"></span> </label> </div>
+              </div>
+            </div>
+          </div>
+        </div><br><br>
+
+
+        
+
+        <div>
+          <button class="btn btn-success" id="quiz">Submit</button>
+        </div>
+      </div>
+    </main>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js" integrity="sha512-WiGQZv8WpmQVRUFXZywo7pHIO0G/o3RyiAJZj8YXNN4AV7ReR1RYWVmZJ6y3H06blPcjJmG/sBpOVZjTSFFlzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js" integrity="sha512-lbwH47l/tPXJYG9AcFNoJaTMhGvYWhVM9YI43CT+uteTRRaiLCui8snIgyAN8XWgNjNhCqlAUdzZptso6OCoFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="/js/quiz.js"></script>
+</body>
+</html>
