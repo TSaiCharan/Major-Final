@@ -42,14 +42,18 @@ function addFields(){
 
         question_container.appendChild(document.createElement("br"));
         question_container.appendChild(document.createElement("br"));
+
+        var option_container = document.createElement("option_container");
+        option_container.id = "options" + i;
         for (j=0;j<4;j++){ 
             var input1 = document.createElement("input");
             input1.type = "text";
             input1.className ="col-sm-3";
             input1.name = "option"+j;
             input1.id = "option"+j;
-            question_container.appendChild(input1); 
+            option_container.appendChild(input1); 
         }
+        question_container.appendChild(option_container); 
         question_container.appendChild(document.createElement("br"));
         question_container.appendChild(document.createElement("br"));
         question_container.appendChild(document.createElement("br"));
@@ -82,9 +86,6 @@ $(document).ready(()=>{
     $("#addContest").click(()=>{
         $("#myModal").modal("show")    
     })
-    $("#formSubmit").click(()=>{
-        $("#myModal").modal("hide")    
-    })
     $(this).click((e)=>{
         var btn = $(e.target).attr('id')
         var btnClass = $(e.target).attr('class')
@@ -113,8 +114,9 @@ $(document).ready(()=>{
                 var ans = document.getElementById("answer"+i).value;
                 var options = []
                 for(j=0;j<4;j++){ 
-                    var op = document.getElementById("option"+j).value;
-                    options.push(op);
+                    var op = document.getElementById("options"+i).children[j].value;
+                    // var op = document.getElementById("option_container"+j).value;
+                    options.push(op); 
                 }
                 question["question"] = que;
                 question["answer"] = ans;
@@ -123,7 +125,7 @@ $(document).ready(()=>{
             }
             contestData["questions"] = question_Arr;
             contestData["num_questions"] = localStorage.num_ques;
-            console.log(contestData)
+            // console.log(contestData)
             $.ajax({
                 url : `/api/contest/add/`+localStorage.userid,
                 type : 'POST',
@@ -133,7 +135,7 @@ $(document).ready(()=>{
                     fillTable();
                 }
             })
-            //$("#myModal").modal("hide");
+            $("#myModal").modal("hide");
         }
     })
 

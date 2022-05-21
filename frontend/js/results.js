@@ -48,7 +48,7 @@ $(document).ready(()=>{
                             }
                             $("#issuer").html("Get-Certified");
                             $("#host").html(data.result[0].contestName);
-                            $("#sponsor").html("CMR");
+                            $("#sponsor").html("CVR");
                             var date = new Date();
                             var issuedOn = date.getUTCDate() +" "+ date.getUTCMonth() +" "+ date.getUTCFullYear();
                             $("#issued").html(issuedOn);
