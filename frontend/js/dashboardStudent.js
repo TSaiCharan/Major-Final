@@ -82,7 +82,7 @@ $(document).ready(()=>{
             var contestName = $(e.target).parent().parent().find('td:first-child').text();
             localStorage.contestname = contestName
             localStorage.contestID = btn
-            window.location.href = `/results/${btn}`//**************************change here for adding the contest page**************** */
+            window.location.href = `/results/${btn}`
         }
 
     })

@@ -14,11 +14,9 @@ var templates = {
                     <h4 id="sub-head">This Certificate is presented to</h4>\
                     <h2 id="name"></h2>\
                     <h4 id="remarks"></h4>\
-                    <h6>Issued on : </h6><h6 id="issued"></h6>\
                     <div class="d-flex justify-content-around" style="margin-left: 25px;">\
+                        <div>Issued on :<div id="issued"></div></div>\
                         <div>Issued By: <h3 align="center" class="credits" id="issuer"></h3>\
-                        </div>\
-                        <div>Hosted By: <h3 align="center" class="credits" id="host"></h3>\
                         </div>\
                         <div>Sponsored By: <h3 align="center" class="credits" id="sponsor"></h3>\
                         </div>\
@@ -69,11 +67,9 @@ var templates = {
                     <h4 id="remarks">\
                         <p> --remarks-- </p>\
                     </h4>\
-                    <h6>Issued on : </h6><h6 id="issued"></h6>\
                     <div class="d-flex justify-content-around" style="margin-left: 25px;">\
+                        <div>Issued on : <div id="issued"></div> </div>\
                         <div>Issued By: <h3 align="center" class="credits" id="issuer"></h3>\
-                        </div>\
-                        <div>Hosted By: <h3 align="center" class="credits" id="host"></h3>\
                         </div>\
                         <div>Sponsored By: <h3 align="center" class="credits" id="sponsor"></h3>\
                         </div>\

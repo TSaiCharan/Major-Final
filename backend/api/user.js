@@ -146,9 +146,9 @@ router.post("/signup", async(req, res, next) => {
                                     .save()
                                     .then((result1) => {
                                         const mailOptions = {
-                                            from: '"G.Certify Testing" <kaushikveligatla@gmail.com>', 
+                                            from: '"G.Certify Testing" <sai60095@gmail.com>', 
                                             to: user.email, 
-                                            subject: "Testing mail", 
+                                            subject: "Verification Mail", 
                                             text: "",
                                             html: emailTemplates.VERIFY_EMAIL(result1), 
                                           }
